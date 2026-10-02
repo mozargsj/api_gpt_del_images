@@ -1,0 +1,7 @@
+{
+  "maxPerRun": 500,
+  "everyHours": 24,
+  "olderThanDays": 15,
+  "category": null,
+  "dryRun": false
+}

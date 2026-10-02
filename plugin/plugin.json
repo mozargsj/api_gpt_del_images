@@ -1,0 +1,15 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "limpar-biblioteca",
+  "version": "0.1.0",
+  "description": "Apaga os arquivos da biblioteca do ChatGPT sob demanda ou periodicamente.",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Limpar biblioteca",
+        "shortDescription": "Limpa a biblioteca do ChatGPT",
+        "category": "Productivity"
+      }
+    }
+  }
+}

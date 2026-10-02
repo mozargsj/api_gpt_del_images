@@ -1,0 +1,14 @@
+import OpenAI from "openai";
+
+if (!process.env.OPENAI_API_KEY) {
+  throw new Error("Defina OPENAI_API_KEY no arquivo .env.");
+}
+
+const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+
+const response = await openai.responses.create({
+  model: "gpt-6-astra",
+  input: "write a haiku about ai",
+});
+
+console.log(response.output_text);
